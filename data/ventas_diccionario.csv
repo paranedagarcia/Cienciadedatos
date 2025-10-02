@@ -1,0 +1,56 @@
+COLUMNA, DESCRIPCION
+COTIZACION, Número de cotización
+RESERVA, Número de reserva
+RAZON_COMPRA, Razón de compra
+FORMA_PAGO, Forma de pago
+GRUPO_LLEGADA, Grupo de llegada
+MEDIO_LLEGADA, Medio de llegada
+ORIGEN_VENTA, Origen de venta
+ORIGEN_VISITA, Origen de visita
+UNIDAD, Número de la unidad (departamento)
+PISO, Número de piso
+ORIENTACION, Orientación del departamento
+TIPOLOGIA, Tipología
+METROS, Metros cuadrados
+PRECIO, Precio
+DESCUENTO, Descuento sobre el precio
+ESTADO, Estado
+ESTADO_PRODUCTO, Estado del producto
+FECHA_VISITA, Fecha de visita
+FECHA_COTIZACION, Fecha de cotización
+FECHA_RESERVA, Fecha de reserva
+FECHA_PROMESA, Fecha de promesa
+FECHA_RESCILIACION, Fecha de resciliación
+FECHA_ESCRITURACION, Fecha de escrituración
+FECHA_AGENDADA, Fecha de agendada
+FECHA_ENTREGA, Fecha de entrega del departamento
+DIAS_COTIZACION, Días de cotización
+DIAS_RESERVA, Días de reserva
+DIAS_PROMESA, Días de promesa
+DIAS_ESCRITURACION, Días de escrituración
+DIAS_ENTREGA, Días de entrega
+PROYECTO, Nombre del proyecto
+IDPROYECTO, ID del proyecto
+DIRECCION, Dirección (calle y número)
+COMUNA, Comuna del proyecto
+REGION_PROYECTO, Región del proyecto
+LATITUD, Latitud
+LONGITUD, Longitud
+MOTIVO_RESCILIACION, Motivo de resciliación
+BANCO_HIPOTECARIO, Banco hipotecario
+PAGO_CONTADO, Pago al contado
+MOTIVO_DESISTIMIENTO, Motivo de desistimiento
+SubMotivoDesistimiento, Submotivo de desistimiento
+COMUNA_PROYECTO, Comuna del proyecto
+FECHA_LIBERACION, Fecha de liberación
+CLIENTE, Identificación del Cliente
+NACIMIENTO, Fecha de nacimiento
+EDAD, Edad
+SEXO, Sexo
+ESTADO_CIVIL, Estado civil
+HIJOS, Número de hijos
+OCUPACION, Ocupación
+NACIONALIDAD, Nacionalidad del cliente
+COMUNA_CLIENTE, Comuna del cliente
+REGION, Región del cliente
+INGRESO, Nivel de ingresos
