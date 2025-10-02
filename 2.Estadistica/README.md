@@ -15,7 +15,7 @@
 7. Inferencia básica y pruebas de hipótesis
 
 ## Introducción a la estadística
-
+La ciencia de datos, como disciplina que se dedica a extraer conocimiento y valor de datos estructurados y no estructurados, tiene una base inquebricable en las matemáticas y, en particular, en la estadística. La estadística proporciona el lenguaje, los métodos y los marcos conceptuales necesarios para transformar datos crudos en información inteligible y accionable. Sin una comprensión sólida de sus principios fundamentales, cualquier intento de analizar datos, construir modelos predictivos o tomar decisiones basadas en evidencia sería pura especulación. Por lo tanto, este módulo se centra en los conceptos estadísticos esenciales que todo científico de datos debe dominar para llevar a cabo análisis rigurosos y confiables.
 
 ## Variables y escalas
 
