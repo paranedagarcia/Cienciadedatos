@@ -7,7 +7,7 @@ Formar profesionales capaces de adquirir, procesar, analizar y comunicar informa
 
 ---
 
-### 📓 Módulo 0: Introducción al Data Science (6 horas / 3 sesiones)
+### 📓 Módulo 0: Introducción al Data Science
 **Objetivo del módulo:** Comprender el rol del científico de datos y el ciclo de vida de los proyectos de data science.
 
 **Resultados de Aprendizaje:**
@@ -25,7 +25,7 @@ Formar profesionales capaces de adquirir, procesar, analizar y comunicar informa
 
 ---
 
-### 🧯 Módulo 1: Fundamentos de Programación con Python (24 horas / 12 sesiones)
+### 🧯 Módulo 1: Fundamentos de Programación con Python
 **Objetivo del módulo:** Introducir la lógica computacional y sintaxis básica de Python.
 
 **Resultados de Aprendizaje:**
@@ -46,7 +46,7 @@ Formar profesionales capaces de adquirir, procesar, analizar y comunicar informa
 
 ---
 
-### 📊 Módulo 2: Análisis de Datos con Pandas y Numpy (18 horas / 9 sesiones)
+### 📊 Módulo 2: Análisis de Datos con Pandas y Numpy
 **Objetivo del módulo:** Aprender a manipular y analizar datasets.
 
 **Resultados de Aprendizaje:**
@@ -64,7 +64,7 @@ Formar profesionales capaces de adquirir, procesar, analizar y comunicar informa
 
 ---
 
-### 📊 Módulo 3: Fundamentos de Estadística y Probabilidades (22 horas / 11 sesiones)
+### 📊 Módulo 3: Fundamentos de Estadística y Probabilidades
 **Objetivo del módulo:** Introducir estadística descriptiva e inferencial.
 
 **Resultados de Aprendizaje:**
@@ -83,7 +83,7 @@ Formar profesionales capaces de adquirir, procesar, analizar y comunicar informa
 
 ---
 
-### 📊 Módulo 4: Visualización de Datos (10 horas / 5 sesiones)
+### 📊 Módulo 4: Visualización de Datos
 **Objetivo del módulo:** Aprender a comunicar hallazgos mediante gráficos eficaces.
 
 **Resultados de Aprendizaje:**
@@ -99,7 +99,7 @@ Formar profesionales capaces de adquirir, procesar, analizar y comunicar informa
 
 ---
 
-### 🧠 Módulo 5: Machine Learning Supervisado (30 horas / 15 sesiones)
+### 🧠 Módulo 5: Machine Learning Supervisado
 **Objetivo del módulo:** Introducir modelos supervisados y su aplicación.
 
 **Resultados de Aprendizaje:**
@@ -117,7 +117,7 @@ Formar profesionales capaces de adquirir, procesar, analizar y comunicar informa
 
 ---
 
-### 🔮 Módulo 6: Machine Learning No Supervisado (12 horas / 6 sesiones)
+### 🔮 Módulo 6: Machine Learning No Supervisado
 **Objetivo del módulo:** Aplicar técnicas de agrupamiento y reducción de dimensionalidad.
 
 **Resultados de Aprendizaje:**
@@ -132,7 +132,7 @@ Formar profesionales capaces de adquirir, procesar, analizar y comunicar informa
 
 ---
 
-### 🛠️ Módulo 7: Data Wrangling, Web Scraping y APIs (12 horas / 6 sesiones)
+### 🛠️ Módulo 7: Data Wrangling, Web Scraping y APIs
 **Objetivo del módulo:** Obtener datos desde fuentes externas.
 
 **Resultados de Aprendizaje:**
@@ -148,7 +148,7 @@ Formar profesionales capaces de adquirir, procesar, analizar y comunicar informa
 
 ---
 
-### 📂 Módulo 8: Bases de Datos y SQL (14 horas / 7 sesiones)
+### 📂 Módulo 8: Bases de Datos y SQL
 **Objetivo del módulo:** Introducir el uso de SQL en ciencia de datos.
 
 **Resultados de Aprendizaje:**
@@ -164,7 +164,7 @@ Formar profesionales capaces de adquirir, procesar, analizar y comunicar informa
 
 ---
 
-### 🔧 Módulo 9: Proyecto Integrador (28 horas / 14 sesiones)
+### 🔧 Módulo 9: Proyecto Integrador
 **Objetivo del módulo:** Aplicar los conocimientos en un proyecto final realista.
 
 **Resultados de Aprendizaje:**

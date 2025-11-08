@@ -238,11 +238,9 @@ La elección de la base adecuada está en directa relación con lo que el negoci
 
 Lo anterior tambien aplicará en el entorno sanitario donde se requiere alta seguridad de los datos administrados por sobre la disponibilidad (¿cuantas veces ha oído que se ha caído el sistema?).
 
-## PostgreSQL
-
-PostgreSQL es un motor de base relacional
-
-Se verá en mayor detalle en el capítulo 11.
+## PostgreSQL 
+PostgreSQL es un sistema de gestión de bases de datos relacional y objeto - relacional de código abierto que utiliza y extiende el lenguaje SQL combinado con muchas características que almacenan y escalan la complejidad de los datos modernos. Fue desarrollado originalmente en la Universidad de California en Berkeley y ha evolucionado a lo largo de más de 30 años para convertirse en uno de los sistemas de bases de datos más avanzados y confiables del mundo.
+PostgreSQL es conocido por su robustez, rendimiento y conformidad con los estándares SQL. Admite una amplia gama de tipos de datos, incluyendo JSON, XML y tipos geométricos, lo que lo hace adecuado para aplicaciones que requieren almacenamiento y manipulación de datos complejos. Además, PostgreSQL ofrece características avanzadas como transacciones ACID, replicación, particionamiento y extensibilidad mediante la creación de funciones personalizadas y tipos de datos definidos por el usuario.
 
 <https://www.postgresql.org/>
 
