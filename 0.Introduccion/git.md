@@ -1,7 +1,31 @@
-# Git / GitHub — Manual completo (resumen práctico)
+# Git / GitHub —  (resumen práctico)
 
 ## Introducción
 Git es un sistema de control de versiones distribuido para gestionar cambios en código y archivos. GitHub es una plataforma que hospeda repositorios Git y facilita colaboración mediante ramas, pull requests y revisión de código.
+
+ ## Integración de Git/GitHub en el flujo de trabajo
+Git y GitHub son esenciales para gestionar el código y colaborar en proyectos de ciencia de datos. Aquí se explica cómo integrarlos en el flujo de trabajo:
+1. **Inicialización del repositorio**: Al comenzar un nuevo proyecto, inicializa un repositorio Git local para rastrear los cambios en el código.
+2. **Commits frecuentes**: Realiza commits regulares con mensajes descriptivos para documentar el progreso y los cambios realizados.
+3. **Ramas para características**: Crea ramas para desarrollar nuevas características o experimentar sin afectar la rama principal (main).
+4. **Colaboración**: Utiliza GitHub para compartir el repositorio con colaboradores, facilitando la revisión de código y la integración de cambios mediante pull requests.
+5. **Documentación**: Mantén un archivo README.md actualizado en GitHub para describir el proyecto, su propósito y cómo utilizarlo.
+6. **Versionado de modelos**: Considera usar Git LFS (Large File Storage) para gestionar archivos grandes, como modelos entrenados o conjuntos de datos.
+7. **Despliegue**: Automatiza el despliegue del modelo o la aplicación utilizando GitHub Actions u otras herramientas de CI/CD.
+Integrar Git y GitHub en el flujo de trabajo mejora la organización, facilita la colaboración y asegura un historial claro de los cambios realizados en el proyecto.
+---
+## Buenas prácticas al usar Git/GitHub en ciencia de datos
+- **.gitignore**: Utiliza un archivo .gitignore para excluir archivos innecesarios (datos grandes, entornos virtuales) del repositorio.
+- **Commits atómicos**: Realiza commits que representen cambios específicos y coherentes para facilitar la revisión y el seguimiento.
+- **Mensajes claros**: Escribe mensajes de commit descriptivos que expliquen el "qué" y el "por qué" de los cambios.
+- **Ramas temáticas**: Crea ramas para cada característica o experimento, y fusiona (merge) a la rama principal solo cuando estén probadas.
+- **Revisiones de código**: Fomenta las revisiones de código mediante pull requests para mejorar la calidad del código y compartir conocimientos.
+- **Documentación**: Mantén la documentación del proyecto actualizada en GitHub, incluyendo instrucciones de uso y dependencias.
+- **Etiquetas y versiones**: Usa etiquetas (tags) para marcar versiones importantes del proyecto, facilitando el seguimiento de releases.
+- **Seguridad**: No incluyas credenciales o información sensible en el repositorio; utiliza variables de entorno o servicios de gestión de secretos.
+- **Colaboración**: Comunica claramente con los colaboradores sobre las convenciones de codificación y el flujo de trabajo.
+Seguir estas buenas prácticas al usar Git y GitHub en proyectos de ciencia de datos contribuye a un desarrollo más organizado, colaborativo y eficiente.
+---
 
 ## Conceptos clave
 - Repositorio (repo): carpeta con historial Git.
@@ -11,10 +35,11 @@ Git es un sistema de control de versiones distribuido para gestionar cambios en 
 - Push / Pull: enviar/traer commits a/de un remote.
 - Merge / Rebase: integrar cambios entre ramas.
 
-La documentación oficial de Git: https://git-scm.com/book/es/v2
+La documentación oficial de Git: 
+- https://git-scm.com/book/es/v2
 ---
-
-## Inicializar un nuevo repositorio local
+## Configuración inicial de Git
+### Inicializar un nuevo repositorio local
 1. Crea carpeta o ve a la carpeta del proyecto:
     ```bash
     mkdir mi-proyecto
