@@ -1,0 +1,68 @@
+---
+title: "Quarto Basics"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+# Quarto
+
+Documentación oficial: [Quarto](https://quarto.org/)
+
+**Instalación:**
+```bash
+# Usando conda
+conda install -c conda-forge quarto 
+# Usando Homebrew en macOS
+brew install quarto
+```
+**Características principales de Quarto**
+1. **Soporte para múltiples lenguajes**: Quarto admite varios lenguajes de programación, incluidos R, Python, Julia y JavaScript, lo que permite a los usuarios crear documentos que integran código y resultados de diferentes lenguajes.
+2. **Formatos de salida flexibles**: Quarto puede generar una amplia variedad de formatos de salida, como HTML, PDF, Word, presentaciones de diapositivas y libros electrónicos, lo que facilita la publicación y distribución de contenido.
+3. **Integración con herramientas populares**: Quarto se integra fácilmente con herramientas populares como Jupyter Notebooks, R Markdown y GitHub, lo que facilita la colaboración y el control de versiones.
+4. **Personalización y extensibilidad**: Quarto ofrece una amplia gama de opciones de personalización, incluidas plantillas, temas y extensiones, lo que permite a los usuarios adaptar sus documentos a sus necesidades específicas.
+5. **Soporte para contenido interactivo**: Quarto permite la inclusión de contenido interactivo, como gráficos y visualizaciones, lo que mejora la experiencia del lector y facilita la comprensión de los resultados.
+6. **Fácil de usar**: Quarto está diseñado para ser accesible tanto para principiantes como para usuarios avanzados, con una sintaxis simple y una documentación completa que facilita el aprendizaje y la adopción de la herramienta.  
+**Ejemplo básico de un documento Quarto:**
+
+# Introducción
+Este es un ejemplo básico de un documento Quarto.
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Crear datos de ejemplo
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Crear gráfico
+plt.plot(x, y)
+plt.title("Gráfico de ejemplo")
+plt.xlabel("Eje X")
+plt.ylabel("Eje Y")
+plt.grid()
+plt.show()
+```
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+# Conclusión
+Este documento demuestra cómo integrar código Python en un documento Quarto para generar gráficos.
+
