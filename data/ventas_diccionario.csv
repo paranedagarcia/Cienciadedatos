@@ -43,7 +43,7 @@ MOTIVO_DESISTIMIENTO, Motivo de desistimiento
 SubMotivoDesistimiento, Submotivo de desistimiento
 COMUNA_PROYECTO, Comuna del proyecto
 FECHA_LIBERACION, Fecha de liberación
-CLIENTE, Identificación del Cliente
+CLIENTE, Identificación del Cliente (anominizado)
 NACIMIENTO, Fecha de nacimiento
 EDAD, Edad
 SEXO, Sexo
