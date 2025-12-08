@@ -18,10 +18,19 @@ El aprendizaje supervisado es ampliamente utilizado en sectores como la banca y 
 
 El ML supervisado suele ser la técnica más utilizada en la industria, ya que muchas aplicaciones prácticas cuentan con datos históricos etiquetados y requieren predicciones precisas sobre variables específicas. El ML no supervisado, aunque relevante para tareas como agrupamiento, reducción de dimensionalidad o detección de anomalías, es menos frecuente en aplicaciones donde se necesita una predicción concreta o clasificación basada en ejemplos previos conocidos. Sin embargo, ambos enfoques son complementarios y pueden combinarse en soluciones avanzadas.
 
--
-#### Random Forest
 
-[ver Random Forest](Random_forest.ipynb)
+### Temas
+- [Arboles de decision](Arboles.ipynb)
 
-#### Regresion Lineal
-[ver Regresion Lineal](Regresion_lineal.ipynb)
+- [Random Forest](Random_forest.ipynb)
+
+- [Regresion Lineal](Regresion_lineal.ipynb)
+
+- [Regresión logistica](Regresion_logistica.ipynb)
+
+- [Máquina de soporte vectorial](SVM.ipynb)
+
+- [Gradient boosting](Gradient_boosting.ipynb)
+
+### Herramientas
+- [Scikit-Learn](Scikit-Learn.ipynb)
