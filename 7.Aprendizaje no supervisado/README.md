@@ -6,8 +6,11 @@ En términos simples, imagina que tienes una caja llena de botones de diferentes
 
 **Ejemplos cotidianos:**
 - **Agrupación de fotos:** Tu teléfono puede organizar automáticamente tus fotos en álbumes según las personas que aparecen, sin que tú le digas quién es quién.
+
 - **Recomendaciones de música:** Plataformas como Spotify agrupan canciones similares para sugerirte listas de reproducción, aunque nunca hayas escuchado esas canciones antes.
+
 - **Detección de fraudes:** Los bancos pueden identificar transacciones inusuales agrupando comportamientos similares y detectando los que se salen de lo común.
+
 - **Segmentación de clientes:** Las empresas pueden dividir a sus clientes en grupos según sus hábitos de compra, para ofrecerles productos personalizados.
 
 En resumen, el machine learning no supervisado ayuda a descubrir información oculta en los datos, encontrando patrones y agrupaciones que pueden ser útiles para tomar decisiones o entender mejor la información.
