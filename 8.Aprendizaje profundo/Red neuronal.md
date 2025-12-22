@@ -91,7 +91,7 @@ En ambos casos descritos, necesitamos ajustar el peso en la dirección opuesta a
 ![](../images/keras-gradient-descent-weight-update.png)
 *Fuente:[opencv.org](https://courses.opencv.org/courses/course-v1:Tensorflow+Bootcamp+TFKS/courseware/f7a0faad74eb496aa3795bb77144a236/fdeb573c42c246a7b2da7d6ff08ef0dc/?child=first)*
 
-La mejor manera de entender esto es que el signo del gradiente determina la dirección en la que debemos movernos. Sin embargo, esta distancia debe ajustarse con un parámetro llamado tasa de aprendizaje ($\alpha$) , que suele ser un número pequeño, mucho menor que 1. La tasa de aprendizaje es algo que debemos especificar antes del entrenamiento y no algo que la red aprende. Parámetros como este suelen denominarse hiperparámetros para distinguirlos de los parámetros entrenables (como los pesos de la red).
+La mejor manera de entender esto es que el signo del gradiente determina la dirección en la que debemos movernos. Sin embargo, esta distancia debe ajustarse con un parámetro llamado tasa de aprendizaje ($\alpha$) , que suele ser un número pequeño, mucho menor que 1. La tasa de aprendizaje es algo que debemos especificar antes del entrenamiento y no algo que la red aprende. Parámetros como este suelen denominarse **hiperparámetros** para distinguirlos de los parámetros entrenables (como los pesos de la red).
 
 En la práctica, la función de pérdida tiene múltiples dimensiones y no suele ser convexa, sino que presenta numerosos picos y valles. En general, la pendiente de la función de pérdida se denomina gradiente y es una función de todos los pesos de la red. Sin embargo, el enfoque utilizado para actualizar los pesos es conceptualmente el mismo que el descrito aquí.
 
@@ -113,7 +113,7 @@ Tras calcular la pérdida, podemos calcular su gradiente con respecto a los peso
 ## 7 Entrenamiento
 Ahora que tenemos una idea de cómo podemos actualizar los pesos en una red, vale la pena enfatizar que entrenar una red neuronal es un proceso iterativo que generalmente requiere pasar todo el conjunto de entrenamiento a través de la red varias veces.
 
-Cada vez que el conjunto completo de datos de entrenamiento pasa por la red, lo denominamos época de entrenamiento. El entrenamiento de redes neuronales suele requerir varias épocas de entrenamiento hasta que la pérdida deja de disminuir con el entrenamiento adicional. Como se puede observar en el primer gráfico a continuación, la velocidad a la que disminuye la pérdida disminuye gradualmente a medida que avanza el entrenamiento, lo que indica que el modelo se está acercando a su capacidad de aprendizaje.
+Cada vez que el conjunto completo de datos de entrenamiento pasa por la red, lo denominamos época de entrenamiento (**training epoch**). El entrenamiento de redes neuronales suele requerir varias épocas de entrenamiento hasta que la pérdida deja de disminuir con el entrenamiento adicional. Como se puede observar en el primer gráfico a continuación, la velocidad a la que disminuye la pérdida disminuye gradualmente a medida que avanza el entrenamiento, lo que indica que el modelo se está acercando a su capacidad de aprendizaje.
 
 También es muy común graficar la precisión del entrenamiento y, como es de esperar, a medida que la pérdida disminuye, la precisión tiende a aumentar, como se muestra en el segundo gráfico.
 
@@ -135,3 +135,6 @@ El descenso de gradiente se utiliza de manera iterativa para actualizar los peso
 Se utiliza un subconjunto de las imágenes de entrenamiento (tamaño del lote) para actualizar el peso. Esto se denomina iteración dentro de una época de entrenamiento.
 Una época de entrenamiento consiste en procesar todo el conjunto de datos de entrenamiento a través de la red. Por lo tanto, el número de iteraciones en una época de entrenamiento es igual al número de imágenes de entrenamiento dividido entre el tamaño del lote.
 Cada época de entrenamiento representa un paso completo del progreso del entrenamiento hasta que la función de pérdida se estabiliza. Precaución: En la práctica, no nos basamos únicamente en la pérdida de entrenamiento para evaluar la calidad del modelo entrenado. También se requiere la pérdida de validación, que abordaremos en una publicación posterior.
+
+## Backpropagation
+
