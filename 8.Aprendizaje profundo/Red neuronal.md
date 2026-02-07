@@ -8,7 +8,7 @@ Tabla de contenido
 2 Datos de entrenamiento etiquetados y codificación One-Hot
 3 La función de pérdida
 4 Descenso de gradiente (Optimización) )
-5. Cálculo de muestra de actualización de peso
+5 Cálculo de muestra de actualización de peso
 6 El circuito de entrenamiento completo
 7 Parcelas de Entrenamiento
 8. Realizar inferencias utilizando un modelo entrenado
@@ -102,7 +102,7 @@ Para que esto sea un poco más concreto, hagamos un cálculo de ejemplo para act
 
 Un aspecto que aún no hemos abordado es cómo se calcula el gradiente de la función de pérdida con respecto a los pesos de la red. Afortunadamente, esto se gestiona mediante un algoritmo llamado retropropagación, integrado en frameworks de aprendizaje profundo como **TensorFlow**, **Keras** y **PyTorch**, por lo que no es necesario implementarlo.
 
-## 6 El circuito de entrenamiento completo
+## 6. El circuito de entrenamiento completo
 Ahora que hemos cubierto todos los elementos esenciales asociados con el entrenamiento de una red neuronal, podemos resumir el proceso en el siguiente diagrama.
 
 Aquí, tenemos una imagen de entrada a la izquierda y la salida de la red a la derecha, a la que nos referimos como $y'$
@@ -110,7 +110,7 @@ Usamos la etiqueta de verdad fundamental, $y$, junto con la salida prevista de l
 
 Tras calcular la pérdida, podemos calcular su gradiente con respecto a los pesos, lo que permite actualizarlos en la red. Este diagrama es importante y resume a grandes rasgos el proceso de entrenamiento de una red neuronal.
 
-## 7 Entrenamiento
+## 7. Entrenamiento
 Ahora que tenemos una idea de cómo podemos actualizar los pesos en una red, vale la pena enfatizar que entrenar una red neuronal es un proceso iterativo que generalmente requiere pasar todo el conjunto de entrenamiento a través de la red varias veces.
 
 Cada vez que el conjunto completo de datos de entrenamiento pasa por la red, lo denominamos época de entrenamiento (**training epoch**). El entrenamiento de redes neuronales suele requerir varias épocas de entrenamiento hasta que la pérdida deja de disminuir con el entrenamiento adicional. Como se puede observar en el primer gráfico a continuación, la velocidad a la que disminuye la pérdida disminuye gradualmente a medida que avanza el entrenamiento, lo que indica que el modelo se está acercando a su capacidad de aprendizaje.
@@ -124,7 +124,7 @@ Nota: Un tema importante que aún no hemos abordado es la división de datos. Es
 ## 8. Realizar inferencias utilizando un modelo entrenado
 Ahora que hemos cubierto el proceso de entrenamiento de una red neuronal, vale la pena explicar brevemente qué haremos con ella. Una vez entrenada, podemos proporcionarle imágenes de contenido desconocido y usar la red para predecir la clase a la que pertenece la imagen. Esto se refleja en el diagrama a continuación. Observe que, en este punto, no necesitamos datos etiquetados. Solo necesitamos imágenes de contenido desconocido que deseamos clasificar. Realizar predicciones sobre datos desconocidos se conoce a menudo como usar la red para realizar inferencias.
 
-## 9 Conclusión
+## 9. Conclusión
 Resumamos los puntos clave asociados al entrenamiento de redes neuronales.
 
 Se requieren datos de entrenamiento etiquetados para entrenar una red neuronal para tareas de aprendizaje supervisado, como la clasificación de imágenes.
