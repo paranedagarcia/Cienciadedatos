@@ -8,3 +8,4 @@ Gemfile.lock
 .Rproj.user
 .ipynb_checkpoints
 data/ventas.csv
+datasets/
