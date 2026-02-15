@@ -14,6 +14,7 @@ El documento se asemeja a los registros de una base tradicional. Sin embargo, es
 
 Cada documento está estructurado en un formato JSON (Javascript System Object Notation), del tipo:
 ```
+Documentos de una colección "personal":
 {
     _id: ObjectId('67e17478507575ae54544')
     nombre: "Pedro",
@@ -31,6 +32,22 @@ Cada documento está estructurado en un formato JSON (Javascript System Object N
         celular: "+569807600",
         otro: "+56267891234"
     }
+},
+{
+    _id: ObjectId('67e17478507575ae58970')
+    nombre: "Juan",
+    apellido: "Sotomayor",
+    edad: 55,
+    activo: true,
+    nacimiento: "1980-10-20",
+    grupos: ["usuario"],
+    correo: {
+        trabajo: "contacto@ipp.cl"
+    },
+    telefono: {
+        celular: "+569807600"
+    },
+    cargo: "Jefe de Division"
 }
 ```
 
