@@ -9,3 +9,5 @@ Gemfile.lock
 .ipynb_checkpoints
 data/ventas.csv
 datasets/
+mlruns/
+mlflow.db
