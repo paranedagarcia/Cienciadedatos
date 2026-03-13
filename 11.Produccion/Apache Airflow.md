@@ -46,3 +46,82 @@ Airflow resuelve esto con una capa robusta de:
 ## Arquitectura
 
 <div align="center"><img src="../images/airflow-3-arch.png"></div>
+
+**Arquitectura lógica**
+```
+         ┌──────────────────────────────┐
+         │           CI/CD              │
+         │ Git + Tests + Deploy (Helm)  │
+         └──────────────┬───────────────┘
+                        │
+┌───────────────────────▼────────────────────────┐
+│                Apache Airflow                  │
+│  ┌───────────┐   ┌───────────┐   ┌───────────┐ │
+│  │ Webserver │   │ Scheduler │   │ Triggerer │ │
+│  └─────┬─────┘   └─────┬─────┘   └─────┬─────┘ │
+│        │               │               │       │
+│        └───────────────┼───────────────┘       │
+│                        ▼                       │
+│                  Executor (K8s/Celery)         │
+│                        ▼                       │
+│                   Workers / Pods               │
+└────────────────────────┬───────────────────────┘
+                         │
+          ┌──────────────┴───────────────┐
+          │                              │
+┌─────────▼──────────┐         ┌─────────▼──────────┐
+│ Metadata DB        │         │ Logs / Artifacts   │
+│ Postgres (estado)  │         │ S3/GCS/Blob/ELK    │
+└─────────┬──────────┘         └─────────┬──────────┘
+          │                              │
+          └──────────────┬───────────────┘
+                         ▼
+               ┌───────────────────┐
+               │ Sistemas externos │
+               │ DBs, APIs, DWH,   │
+               │ Spark/dbt/MLflow  │
+               └───────────────────┘
+```
+
+## Instalación
+
+La instalación solo es soportada oficialmente mediante pip
+```bash
+pip install 'apache-airflow==3.1.6' \
+ --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.1.6/constraints-3.10.txt"
+ ```
+
+ Instalar con extras como postgresql, google u otros
+```bash
+pip install 'apache-airflow[postgres,google]==3.1.6' \
+ --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.1.6/constraints-3.10.txt"
+```
+
+Para instalar en ambientes de desarrollo y local revisa este enlace:
+
+https://github.com/apache/airflow/blob/main/INSTALLING.md
+
+Establezca el directorio por defecto para airflow
+```bash
+export AIRFLOW_HOME=~/airflow
+````
+Para arrancar Airflow ejecute en la terminal (con el .env adecuado):
+```bash
+airflow standalone
+````
+Abra el navegador en http://localhost:8080
+
+## Componentes principales
+
+DAG Directory
+```
+airflow/
+├── dags/                    # Directorio principal de DAGs
+│   ├── etl_pipeline.py
+│   ├── ml_pipeline.py
+│   └── utils/
+├── plugins/                 # Plugins personalizados
+├── config/                  # Configuración
+├── logs/                    # Logs de ejecución
+└── data/                    # Datos temporales
+```
